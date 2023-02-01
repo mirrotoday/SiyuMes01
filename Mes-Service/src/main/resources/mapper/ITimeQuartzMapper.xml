@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.siyu.messervice.mapper.ITimeQuartzMapper">
+
+    <resultMap id="BaseResultMap" type="com.siyu.messervice.entity.TimeQuartz">
+            <id property="id" column="id" jdbcType="VARCHAR"/>
+            <result property="number" column="number" jdbcType="VARCHAR"/>
+            <result property="classname" column="className" jdbcType="VARCHAR"/>
+            <result property="classmethod" column="classMethod" jdbcType="VARCHAR"/>
+            <result property="cron" column="cron" jdbcType="VARCHAR"/>
+            <result property="creattime" column="creatTime" jdbcType="TIMESTAMP"/>
+            <result property="effdatetime" column="effDateTime" jdbcType="TIMESTAMP"/>
+            <result property="leffdatetime" column="leffDateTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,number,className,classMethod,cron,creatTime,effDateTime,leffDateTime
+    </sql>
+    <insert id="insert">
+
+    </insert>
+
+</mapper>
